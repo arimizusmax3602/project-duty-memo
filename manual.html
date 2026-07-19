@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>操作マニュアル｜プロジェクト当番メモ</title>
+  <style>
+    :root{--navy:#17324d;--blue:#2563eb;--light:#f3f6fa;--line:#d8e0e8;--red:#c62828}
+    *{box-sizing:border-box}body{margin:0;background:var(--light);color:#1f2937;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.75}
+    header{position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 2px 8px #0003}
+    header h1{font-size:20px;margin:0}.back{color:#fff;border:1px solid #ffffff88;border-radius:8px;padding:7px 12px;text-decoration:none;white-space:nowrap}
+    main{max-width:960px;margin:24px auto;padding:0 16px 60px}.lead,.toc,section{background:#fff;border-radius:14px;padding:22px;margin-bottom:18px;box-shadow:0 2px 10px #18324d12}
+    h2{margin:0 0 12px;color:var(--navy);font-size:22px;border-bottom:2px solid #e5ebf1;padding-bottom:8px}h3{margin:20px 0 5px;font-size:17px;color:var(--navy)}
+    .toc a{color:var(--blue)}ol,ul{padding-left:24px}.shot{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;margin:14px 0 6px}.caption{font-size:13px;color:#667085;margin-top:0}
+    .note,.warn{border-left:5px solid var(--blue);background:#eff6ff;padding:10px 14px;border-radius:5px;margin:12px 0}.warn{border-color:var(--red);background:#fff1f1;color:#8b1a1a;font-weight:600}
+    table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{background:#edf2f7}
+    code{background:#eef2f6;padding:2px 5px;border-radius:4px}@media(max-width:640px){header h1{font-size:15px}.lead,.toc,section{padding:16px}h2{font-size:19px}th,td{font-size:13px;padding:7px}}
+    @media print{header{position:static}.back{display:none}body{background:#fff}.lead,.toc,section{box-shadow:none;border:1px solid #ddd;break-inside:avoid}.shot{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <header><h1>☎ プロジェクト当番メモ 操作マニュアル</h1><a class="back" href="index.html">当番メモへ戻る</a></header>
+  <main>
+    <div class="lead"><strong>このマニュアルについて</strong><br>朝・夜・土曜の電話当番で、電話順の確認、メンバー登録、電話記録、台帳リンク確認を行うための手順です。スマホとPCは同じ共有データを表示します。</div>
+    <nav class="toc"><strong>目次</strong><ol><li><a href="#start">当番を開始する</a></li><li><a href="#order">順番とメンバーを準備する</a></li><li><a href="#record">電話を記録する</a></li><li><a href="#check">1週間分を当番チェックする</a></li><li><a href="#rules">運用上の注意</a></li></ol></nav>
+
+    <section id="start"><h2>1. 当番を開始する</h2><ol><li>共有されたURLをChromeで開きます。</li><li><strong>朝当番・夜当番・土曜当番</strong>から担当する当番を選びます。</li><li>ログイン後、画面上部の日付を確認します。過去または別日の記録を開く場合は日付を変更します。</li></ol><img class="shot" src="manual-login.png" alt="当番選択画面"><p class="caption">画面コピー：当番選択画面</p><div class="note">週単位の不備確認をするときだけ「当番チェック」を選びます。</div></section>
+
+    <section id="order"><h2>2. 順番とメンバーを準備する</h2><ol><li>ログイン直後は<strong>順番</strong>画面が表示されます。</li><li>「メンバー編集」から当日のメンバーを追加します。名前の入力後にEnterキーでも追加できます。</li><li>並び順を確認し、使用中の端末で「自分」を選択します。選択した人が電話記録の担当者に初期表示されます。</li><li>必要に応じて医事担当者・部門担当者の名前と内線番号を登録します。</li></ol><img class="shot" src="manual-order.png" alt="順番画面"><p class="caption">画面コピー：順番画面（記録がない日の例）</p><div class="note">電話順は「問い合わせ」の記録を保存したときだけ次へ進みます。記録せずに順番だけ進める操作はありません。</div></section>
+
+    <section id="record"><h2>3. 電話を記録する</h2><ol><li>順番画面または記録画面の<strong>「電話を記録」</strong>を押します。入力中は電話中として画面に表示されます。</li><li>受付日時、病院名、区分、担当者、内容、台帳リンクなどを入力します。</li><li>内容を確認して保存します。</li></ol><div class="warn">台帳の受付日時と、この画面の電話受付日時に差異がないよう必ず確認してください。</div><table><thead><tr><th>区分</th><th>入力・順番の扱い</th></tr></thead><tbody><tr><td>問い合わせ</td><td>保存後に電話順が次へ進みます。</td></tr><tr><td>部門問い合わせ</td><td>システム（リハ・勤務・RIS・健診）を必須選択。担当者は登録済み候補の選択または手入力ができます。</td></tr><tr><td>医事取次</td><td>医事担当者を候補から選ぶか手入力します。</td></tr><tr><td>取次／その他</td><td>必要事項を入力します。電話順は進みません。</td></tr></tbody></table><h3>台帳を新しく作る場合</h3><p>入力画面の「台帳を新規作成」ボタンを使用します。現在は起動先URLの登録待ちのため、URL設定後に利用できます。</p><h3>保存後の確認</h3><p>記録一覧で、台帳リンクがない記録は強調表示されます。リンクを登録して注意表示を解消してください。部門問い合わせ・医事取次で担当者が未入力の記録も確認対象になります。</p></section>
+
+    <section id="check"><h2>4. 1週間分を当番チェックする</h2><ol><li>当番選択画面で<strong>「当番チェック」</strong>を選びます。</li><li>対象週を指定します。</li><li>朝・夜・土曜をまとめて確認します。</li><li>台帳リンクなし、担当者未入力、台帳と電話受付日時の差異、台帳側に該当なしの記録を修正します。</li></ol><img class="shot" src="manual-check.png" alt="当番チェック画面"><p class="caption">画面コピー：当番チェック画面</p><div class="note">突合チェックは通常の朝・夜・土曜画面には表示されず、「当番チェック」からのみ開けます。</div></section>
+
+    <section id="rules"><h2>5. 運用上の注意</h2><ul><li>全員が同じ共有URLを使用してください。別のURLや古いコピーを開くと同じデータが見えない場合があります。</li><li>保存後、共有状態の表示を確認してください。通信できない場合は、接続回復後に再読み込みします。</li><li>同じ記録を複数端末で同時編集しないでください。</li><li>台帳リンクと受付日時は当番中に確認し、週次の当番チェックで未入力を残さないようにします。</li><li>このマニュアルは各当番画面上部の「操作マニュアル」からいつでも開けます。</li></ul></section>
+  </main>
+</body>
+</html>
